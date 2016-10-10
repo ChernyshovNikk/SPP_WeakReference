@@ -1,0 +1,6 @@
+E:\СПП\SecondLab\WeakReference\WeakReference\bin\Debug\WeakReference.exe.config
+E:\СПП\SecondLab\WeakReference\WeakReference\bin\Debug\WeakReference.exe
+E:\СПП\SecondLab\WeakReference\WeakReference\bin\Debug\WeakReference.pdb
+E:\СПП\SecondLab\WeakReference\WeakReference\obj\Debug\WeakReference.csprojResolveAssemblyReference.cache
+E:\СПП\SecondLab\WeakReference\WeakReference\obj\Debug\WeakReference.exe
+E:\СПП\SecondLab\WeakReference\WeakReference\obj\Debug\WeakReference.pdb
