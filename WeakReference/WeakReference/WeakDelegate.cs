@@ -11,19 +11,35 @@ namespace WeakReferences
     class WeakDelegate
     {
         WeakReference weakReference;
-        MethodInfo method;
-        CreateDelegate newDelegate;
-       
+        MethodInfo methodInfo;
+        CreateNewDelegate newDelegate;
+
         public WeakDelegate(Delegate currentDelegate)
         {
             weakReference = new WeakReference(currentDelegate.Target);
-            method = currentDelegate.Method;
-            newDelegate = new CreateDelegate();
+            methodInfo = currentDelegate.Method;
+            newDelegate = new CreateNewDelegate();
         }
 
-        private class CreateDelegate
-        {
+        public bool IsDelegateAlive { get { return weakReference.IsAlive; } }
 
+        public Delegate Weak { get { return newDelegate.SetNewDelegate(methodInfo, weakReference); } }
+        
+        private class CreateNewDelegate
+        {
+            private MethodInfo delegate_MethodInfo;
+            private WeakReference delegate_WeakReference;
+           
+            private Delegate DelegateInfo()
+            {
+            }
+
+            public Delegate SetNewDelegate(MethodInfo methodInfo, WeakReference weakReference)
+            {
+                this.delegate_MethodInfo = methodInfo;
+                this.delegate_WeakReference = weakReference;
+                return DelegateInfo();
+            }
         }       
     }
 }
