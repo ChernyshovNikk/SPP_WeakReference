@@ -8,7 +8,7 @@ namespace UnitTest_WeakDelegate
 {
     class DelegateProves
     {
-        int intValue;
+        private int intValue;
         public int GetProveInt { get { return intValue; } }
         public void ProveInt(int a, int b)
         {
@@ -16,7 +16,7 @@ namespace UnitTest_WeakDelegate
         }
 
 
-        string text;
+        private string text;
         public string GetProveString { get { return text; } }
         public void ProveString(string firstString, string secondString, string thirdString)
         {
@@ -24,11 +24,19 @@ namespace UnitTest_WeakDelegate
         }
 
 
-        double doubleValue;
+        private double doubleValue;
         public double GetProveDouble { get { return doubleValue; } }
         public void ProveDouble(double value)
         {
             doubleValue = value;
+        }
+
+
+        private string mixValue;
+        public string GetProveMix { get { return mixValue; } }
+        public void ProveMix(int firstIntValue, string stringValue, int secondIntValue)
+        {
+            mixValue = firstIntValue.ToString() + stringValue + secondIntValue.ToString();
         }
     }
 }

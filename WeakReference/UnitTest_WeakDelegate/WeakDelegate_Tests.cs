@@ -36,13 +36,24 @@ namespace UnitTest_WeakDelegate
 
         private event Action<double> eventFloatTest;
         [TestMethod]
-        public void FloatWeak_Test()
+        public void DoubleWeak_Test()
         {
             DelegateProves delegateProves = new DelegateProves();
             WeakDelegate weakDelegate = new WeakDelegate((Action<double>)(delegateProves.ProveDouble));
             eventFloatTest += (Action<double>)weakDelegate;
             eventFloatTest.Invoke(4.7);
             Assert.AreEqual(delegateProves.GetProveDouble, 4.7);
+        }
+
+        private event Action<int, string, int> eventMixTest;
+        [TestMethod]
+        public void MixWeak_Test()
+        {
+            DelegateProves delegateProves = new DelegateProves();
+            WeakDelegate weakDelegate = new WeakDelegate((Action<int, string, int>)(delegateProves.ProveMix));
+            eventMixTest += (Action<int, string, int>)weakDelegate;
+            eventMixTest.Invoke(4, " = ", 4);
+            Assert.AreEqual(delegateProves.GetProveMix, "4 = 4");
         }
     }
 }
