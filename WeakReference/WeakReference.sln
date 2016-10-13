@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2013
 VisualStudioVersion = 12.0.21005.1
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WeakReference", "WeakReference\WeakReference.csproj", "{A48C516B-99A6-49B3-AB66-54125D77E31E}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WeakReferences", "WeakReference\WeakReferences.csproj", "{A48C516B-99A6-49B3-AB66-54125D77E31E}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UnitTest_WeakDelegate", "UnitTest_WeakDelegate\UnitTest_WeakDelegate.csproj", "{568A82C6-E7A3-4DF5-82C2-3214851BF397}"
 EndProject
