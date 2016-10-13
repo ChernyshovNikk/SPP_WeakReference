@@ -14,5 +14,13 @@ namespace UnitTest_WeakDelegate
         {
             value = a * b;
         }
+
+
+        string text;
+        public string GetProveString { get { return text; } }
+        public void ProveString(string firstString, string secondString, string thirdString)
+        {
+            text = firstString + secondString + thirdString;
+        }
     }
 }
