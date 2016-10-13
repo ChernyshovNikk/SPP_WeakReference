@@ -32,5 +32,17 @@ namespace UnitTest_WeakDelegate
             eventStringTest.Invoke("a", "b", "c");
             Assert.AreEqual(delegateProves.GetProveString, "abc");
         }
+
+
+        private event Action<double> eventFloatTest;
+        [TestMethod]
+        public void FloatWeak_Test()
+        {
+            DelegateProves delegateProves = new DelegateProves();
+            WeakDelegate weakDelegate = new WeakDelegate((Action<double>)(delegateProves.ProveDouble));
+            eventFloatTest += (Action<double>)weakDelegate;
+            eventFloatTest.Invoke(4.7);
+            Assert.AreEqual(delegateProves.GetProveDouble, 4.7);
+        }
     }
 }

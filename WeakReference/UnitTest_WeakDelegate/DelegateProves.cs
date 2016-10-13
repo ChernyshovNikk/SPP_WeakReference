@@ -8,11 +8,11 @@ namespace UnitTest_WeakDelegate
 {
     class DelegateProves
     {
-        int value;
-        public int GetProveInt { get { return value; } }
+        int intValue;
+        public int GetProveInt { get { return intValue; } }
         public void ProveInt(int a, int b)
         {
-            value = a * b;
+            intValue = a * b;
         }
 
 
@@ -21,6 +21,14 @@ namespace UnitTest_WeakDelegate
         public void ProveString(string firstString, string secondString, string thirdString)
         {
             text = firstString + secondString + thirdString;
+        }
+
+
+        double doubleValue;
+        public double GetProveDouble { get { return doubleValue; } }
+        public void ProveDouble(double value)
+        {
+            doubleValue = value;
         }
     }
 }
