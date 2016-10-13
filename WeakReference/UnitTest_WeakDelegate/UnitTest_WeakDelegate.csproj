@@ -50,8 +50,15 @@
     </Otherwise>
   </Choose>
   <ItemGroup>
+    <Compile Include="DelegateProves.cs" />
     <Compile Include="WeakDelegate_Tests.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\WeakReference\WeakReferences.csproj">
+      <Project>{a48c516b-99a6-49b3-ab66-54125d77e31e}</Project>
+      <Name>WeakReferences</Name>
+    </ProjectReference>
   </ItemGroup>
   <Choose>
     <When Condition="'$(VisualStudioVersion)' == '10.0' And '$(IsCodedUITest)' == 'True'">

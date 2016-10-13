@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace WeakReferences
 {
-    class WeakDelegate
+    public class WeakDelegate
     {
         WeakReference weakReference;
         MethodInfo methodInfo;
@@ -100,6 +100,11 @@ namespace WeakReferences
             {
                 return new List<ParameterExpression>(argumentsType.Select(argument => Expression.Variable(argument.Type)));
             }
-        } 
+        }
+
+        public static implicit operator Delegate(WeakDelegate temporaryDelegate)
+        {
+            return temporaryDelegate.Weak;
+        }
     }
 }

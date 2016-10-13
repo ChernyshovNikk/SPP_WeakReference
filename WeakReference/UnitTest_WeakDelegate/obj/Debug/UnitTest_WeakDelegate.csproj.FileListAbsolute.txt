@@ -1,0 +1,7 @@
+E:\СПП\SecondLab\WeakReference\UnitTest_WeakDelegate\bin\Debug\UnitTest_WeakDelegate.dll
+E:\СПП\SecondLab\WeakReference\UnitTest_WeakDelegate\bin\Debug\UnitTest_WeakDelegate.pdb
+E:\СПП\SecondLab\WeakReference\UnitTest_WeakDelegate\bin\Debug\WeakReference.exe
+E:\СПП\SecondLab\WeakReference\UnitTest_WeakDelegate\bin\Debug\WeakReference.pdb
+E:\СПП\SecondLab\WeakReference\UnitTest_WeakDelegate\obj\Debug\UnitTest_WeakDelegate.csprojResolveAssemblyReference.cache
+E:\СПП\SecondLab\WeakReference\UnitTest_WeakDelegate\obj\Debug\UnitTest_WeakDelegate.dll
+E:\СПП\SecondLab\WeakReference\UnitTest_WeakDelegate\obj\Debug\UnitTest_WeakDelegate.pdb
